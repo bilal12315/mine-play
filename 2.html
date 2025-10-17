@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+
+
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Этот струнный инструмент используют во многих стилях и направлениях музыки. Значительный вклад в музыкальную индустрию этот инструмент внес к середине 20 века.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Г</h1>
+		</div>
+		<div class="letter2">
+			<h1>И</h1>
+		</div>
+		<div class="letter3">
+			<h1>Т</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+		<div class="letter5">
+			<h1>Р</h1>
+		</div>
+		<div class="letter6">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="yes">A</span>
+	<span onclick="no()">Б</span>
+	<span onclick="no()">В</span>
+	<span class="yes1">Г</span>
+	<span onclick="no()">Д</span>		
+	<span onclick="no()">Е</span>	
+	<span onclick="no()">Ё</span>
+	<span onclick="no()">Ж</span>
+	<span onclick="no()">З</span>
+	<span class="yes2">И</span>
+	<span onclick="no()">Й</span>
+	<span onclick="no()">К</span>
+	<span onclick="no()">Л</span>
+	<span onclick="no()">М</span>
+	<span onclick="no()">Н</span>
+	<span onclick="no()">О</span>
+	<span onclick="no()">П</span>
+	<span class="yes3">Р</span>
+	<span onclick="no()">С</span>
+	<span class="yes4">Т</span>
+	<span onclick="no()">У</span>
+	<span onclick="no()">Ф</span>
+	<span onclick="no()">Х</span>
+	<span onclick="no()">Ц</span>
+	<span onclick="no()">Ч</span>
+	<span onclick="no()">Ш</span>
+	<span onclick="no()">Щ</span>
+	<span onclick="no()">Ъ</span>
+	<span onclick="no()">Ы</span>
+	<span onclick="no()">Ь</span>
+	<span onclick="no()">Э</span>
+	<span onclick="no()">Ю</span>
+	<span onclick="no()">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script>
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+
+		function no() {
+  alert("Неправильно!");
+}
+
+
+  document.querySelector('.yes').onclick = function() {
+    document.querySelector('.letter4').style.background = "yellow"
+	document.querySelector('.letter6').style.background = "yellow"
+  }
+
+    document.querySelector('.yes1').onclick = function() {
+    document.querySelector('.letter1').style.background = "yellow"
+	}
+
+	  document.querySelector('.yes2').onclick = function() {
+    document.querySelector('.letter2').style.background = "yellow"
+	  }
+
+	  	  document.querySelector('.yes3').onclick = function() {
+    document.querySelector('.letter5').style.background = "yellow"
+	  }
+
+	  	  document.querySelector('.yes4').onclick = function() {
+    document.querySelector('.letter3').style.background = "yellow"
+	  }
+	</script>
+</body>
+</html>
